@@ -1,1 +1,1 @@
-docker run -d -p 2222:22 -v /media/2TB-C/docker/bf:/home/data bf-build
+docker run -d -p 2222:22 -v /media:/media bf-build
