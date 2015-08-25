@@ -13,6 +13,8 @@ RUN apt-get install -y mercurial
 RUN apt-get install -y vim
 RUN apt-get install -y bc
 RUN apt-get install -y u-boot-tools
+RUN apt-get install -y device-tree-compiler
+
 
 RUN mkdir /var/run/sshd
 
