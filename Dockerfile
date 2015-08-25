@@ -17,6 +17,8 @@ RUN apt-get install -y device-tree-compiler
 
 ADD dtc /usr/bin/dtc
 
+RUN apt-get install -y ia32-libs
+
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:root' |chpasswd
