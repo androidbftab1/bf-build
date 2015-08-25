@@ -15,6 +15,8 @@ RUN apt-get install -y bc
 RUN apt-get install -y u-boot-tools
 RUN apt-get install -y device-tree-compiler
 
+ADD dtc /usr/bin/dtc
+
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:root' |chpasswd
