@@ -1,4 +1,4 @@
-FROM	ubuntu
+FROM	ubuntu:12.04.5
 MAINTAINER	BF 	"https://github.com/androidbftab1"
 
 RUN apt-get update
