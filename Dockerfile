@@ -1,5 +1,5 @@
 FROM	ubuntu:12.04.5
-MAINTAINER	BF 	"https://github.com/androidbftab1"
+MAINTAINER	noralee 	https://hub.docker.com/u/noralee/
 
 RUN apt-get update
 
@@ -18,6 +18,11 @@ RUN apt-get install -y device-tree-compiler
 ADD dtc /usr/bin/dtc
 
 RUN apt-get install -y ia32-libs
+
+RUN apt-get install -y pkg-config
+RUN apt-get install -y libusb-1.0-0-dev
+
+RUN apt-get install -y python-software-properties software-properties-common
 
 RUN mkdir /var/run/sshd
 
